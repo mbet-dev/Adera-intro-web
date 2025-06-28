@@ -1,7 +1,6 @@
 import React from 'react';
 import { Target, Users, Zap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import DeliveryGuyVideo from '../../assets/DeliveryGuywithaParcel.mp4';
 
 const About = () => {
   const { t } = useLanguage();
@@ -77,21 +76,28 @@ const About = () => {
           </div>
           
           {/* Visual Element */}
-          <div className="relative flex items-center justify-center">
-            <video
-              autoPlay
-              loop
-              muted
-              className="rounded-3xl shadow-2xl w-full max-w-md"
-              style={{
-                transform: 'rotate(3deg)',
-                transition: 'transform 0.5s',
-              }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'rotate(0deg)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'rotate(3deg)'}
-            >
-              <source src={DeliveryGuyVideo} type="video/mp4" />
-            </video>
+          <div className="relative">
+            <div className="bg-gradient-to-br from-emerald-400 to-teal-500 rounded-3xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+              <div className="bg-white rounded-2xl p-6 transform -rotate-3">
+                <div className="space-y-4">
+                  <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+                  <div className="h-4 bg-emerald-200 rounded w-1/2"></div>
+                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+                  <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 bg-emerald-500 rounded-full"></div>
+                    </div>
+                    <div className="h-16 bg-gradient-to-br from-teal-100 to-teal-200 rounded-lg flex items-center justify-center">
+                      <div className="w-8 h-8 bg-teal-500 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Floating elements */}
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full animate-bounce delay-100"></div>
+            <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-pink-400 rounded-full animate-pulse"></div>
           </div>
         </div>
       </div>
