@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className={headerClasses}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 sm:h-24">
           <div className="flex items-center space-x-3">
             <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-2.5 rounded-xl shadow-lg">
               <Package className="h-7 w-7 text-white" />

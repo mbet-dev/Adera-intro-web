@@ -12,9 +12,9 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900 overflow-hidden pt-24 sm:pt-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-start pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full mt-8 sm:mt-12">
           
           {/* Content Side */}
           <div className="space-y-8 z-10 relative">
